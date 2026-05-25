@@ -1,0 +1,262 @@
+---
+import { Image } from "astro:assets";
+import eqEightKick from "../images/eq-eight-kick.png";
+import eqEightSub from "../images/eq-eight-sub.png";
+---
+
+<div>
+	<main>
+		<h1 class="ml-4 text-6xl font-thin">sevilla</h1>
+		<div class="m-4 p-4 border rounded-r-xl">
+			<p>audio effects</p>
+			<div class="my-4 p-4 border rounded-r-xl">
+				<p class="mb-2">"Compressor"</p>
+				<p>
+					A compressor is a tool that automatically turns down the
+					volume of a sound when it gets too loud, and then lets it
+					come back up again. Think of it like an invisible hand on a
+					volume knob — when the sound hits a certain level it pulls
+					the volume down, and when the sound drops below that level
+					it lets the volume back up. This keeps your sounds
+					controlled, tight, and sitting nicely in the mix without
+					jumping out unexpectedly.
+				</p>
+				<div class="my-4 p-4 border rounded-r-xl">
+					<p class="mb-2">Sidechain</p>
+					<p class="mb-2">
+						Sidechaining takes the compressor a step further.
+						Instead of the compressor reacting to the sound it is
+						sitting on, it reacts to a completely different sound.
+						In house music the most common use is sidechaining the
+						sub bass to the kick drum — this means every time the
+						kick hits, the compressor on the sub automatically ducks
+						the sub's volume down for a brief moment, then lets it
+						come back up. This is what creates that classic pumping,
+						breathing low end sound that is the backbone of house
+						music.
+					</p>
+					<p class="mb-2">
+						The reason sidechaining the kick and sub together is so
+						important is because they both live in the same low
+						frequency range. Without sidechaining they will
+						constantly clash and fight each other, making the low
+						end sound boomy, muddy, and indistinct. The sidechain
+						essentially gives the kick the right of way every time
+						it hits, so the kick always punches through clearly
+						while the sub fills in the space in between.
+					</p>
+					<p class="mb-2">
+						To set up the sidechain in Ableton, place a Compressor
+						on your sub bass track. Click the arrow on the left side
+						of the compressor to expand the sidechain section, then
+						turn on External and select your kick track as the
+						source. This tells the compressor to listen to the kick
+						drum and react to it rather than reacting to the sub
+						itself.
+					</p>
+					<p class="mb-2">
+						Threshold is the level at which the compressor kicks in
+						— in the screenshot this was set to -25.2 dB. The lower
+						the threshold the earlier the compressor starts
+						reacting. For sidechain compression on a sub you want
+						the compressor to react every time the kick hits, so set
+						the threshold low enough that every kick hit triggers
+						it. Watch the GR (Gain Reduction) meter and aim for
+						around -6 to -8 dB of gain reduction — this means the
+						sub is ducking by that amount every time the kick hits,
+						which is the sweet spot for a tight house music low end.
+					</p>
+					<p class="mb-2">
+						The SC Filter controls what frequency the compressor
+						listens to inside the sidechain signal before it reacts.
+						Setting the SC Filter Freq to 80 Hz tells the compressor
+						to focus on the low frequency thud of the kick rather
+						than its full signal including the click and high
+						frequency content — this makes the sidechain more
+						precise and musical. Leave the Res at 0.71 and SC Gain
+						at 0.00 dB as these do not need any adjustment.
+					</p>
+					<p class="mb-2">
+						Ratio controls how aggressively the compressor turns the
+						volume down once it kicks in. A ratio of 4:1 as seen in
+						the screenshot is a good starting point for sidechain
+						compression — it means for every 4 dB the sub goes over
+						the threshold, the compressor only lets 1 dB through,
+						creating a firm and controlled duck without being too
+						extreme.
+					</p>
+					<p class="mb-2">
+						Attack controls how fast the compressor reacts when the
+						kick hits. At 1.00 ms as seen in the screenshot, the
+						compressor grabs the sub almost instantly when the kick
+						hits, which is exactly what you want — it lets the
+						kick's initial punch come through clearly and
+						immediately ducks the sub out of the way.
+					</p>
+					<p class="mb-2">
+						Release controls how fast the sub comes back up after
+						the kick has passed. At 30 ms as seen in the screenshot
+						this is set quite fast, meaning the sub bounces back
+						quickly and naturally after each kick hit. This is what
+						creates that rhythmic pumping feel — if the release is
+						too slow the sub will stay ducked for too long and the
+						low end will feel hollow and empty between kicks.
+					</p>
+					<p class="mb-2">
+						The Golden Rule for sidechain compression is the same as
+						EQ — always set it up with your full mix playing. The
+						kick and sub need to be heard together so you can feel
+						the relationship between them. When the sidechain is set
+						correctly the low end should feel tight, punchy, and
+						energetic — the kick hits hard and the sub breathes in
+						and out around it in a way that drives the groove
+						forward.
+					</p>
+					<Image
+						src={eqEightSub}
+						alt="A bird sitting on a nest of eggs."
+					/>
+				</div>
+			</div>
+			<div class="my-4 p-4 border rounded-r-xl">
+				<p>"EQ Eight"</p>
+				<div class="my-4 p-4 border rounded-r-xl">
+					<p class="mb-2">Kick</p>
+					<p class="mb-2">
+						Every kick drum sample is different, so before touching
+						any knobs, turn on the spectrum analyzer in EQ Eight and
+						play the kick so you can see where its energy is sitting
+						— this gray moving shape tells you everything about
+						where the kick lives in the frequency spectrum.
+					</p>
+					<p class="mb-2">
+						EQ Eight has two filter types you will use for the kick.
+						The first is the High-Pass filter, which looks like a
+						ramp sloping upward from left to right — this cuts
+						everything below the frequency you set, letting
+						everything above pass through. The second is the Bell
+						filter, which looks like a diamond shape — this boosts
+						or cuts a specific frequency while leaving everything
+						around it relatively untouched.
+					</p>
+					<p class="mb-2">
+						Band 1 — Remove the Rumble. Set the filter type to
+						High-Pass (the ramp icon, first shape on the left in the
+						filter row) and place it at 30 Hz. This removes ultra
+						low frequencies that you cannot even hear but silently
+						eat up headroom and make your mix sound weak and
+						cluttered. No Gain or Q adjustment needed here, just set
+						the frequency and the filter does the rest.
+					</p>
+					<p class="mb-2">
+						Band 2 — Boost the Body and Thud. Set the filter type to
+						Bell (the diamond icon). Look at the spectrum analyzer
+						and find where the biggest peak is — this is your kick's
+						fundamental tone and where its power lives. For most
+						house kicks this sits somewhere between 60–100 Hz, so
+						place Band 2 there and add a gentle boost of +2 to +3 dB
+						with a Q of around 1.0. Think of this as turning up the
+						punch of the kick, but keep it subtle as a little goes a
+						long way here.
+					</p>
+					<p class="mb-2">
+						Band 3 — Cut the Mud. Set the filter type to Bell (the
+						diamond icon). This is the zone that makes kicks sound
+						boxy, hollow, and cheap if there is too much of it.
+						Listen carefully for a cardboard-like or tubby tone and
+						place Band 3 somewhere in the 200–400 Hz range, cutting
+						by -3 to -4 dB with a Q of around 1.5 to keep the cut
+						focused and surgical. Think of this as removing the
+						cheap hollow sound and replacing it with something tight
+						and solid.
+					</p>
+					<p class="mb-2">
+						Band 4 — Add the Click and Attack. Set the filter type
+						to Bell (the diamond icon). Place Band 4 around 3–4 kHz
+						and add a gentle boost of +2 to +3 dB with a Q of around
+						1.0 to bring out the knock and attack of the kick. This
+						is what makes your kick audible on small speakers,
+						earbuds, and phones. If your kick already sounds punchy
+						and cuts through naturally, go easy here or skip it
+						entirely — always let your ears decide.
+					</p>
+					<p class="mb-2">
+						The Golden Rule — always do all of this with your full
+						mix playing, never in solo. The kick needs to work
+						alongside your bass, sub, and every other element, and
+						the only way to know if your EQ is working is to hear
+						everything together at the same time.
+					</p>
+					<Image
+						src={eqEightKick}
+						alt="A bird sitting on a nest of eggs."
+					/>
+				</div>
+				<div class="my-4 p-4 border rounded-r-xl">
+					<p class="mb-2">Sub</p>
+					<p class="mb-2">
+						Just like the kick, every sub bass is different, so
+						before touching any knobs, turn on the spectrum analyzer
+						in EQ Eight and play the sub so you can see where its
+						energy is sitting — a sub sine will show most of its
+						energy concentrated very low, typically below 100 Hz,
+						which is exactly where it should live.
+					</p>
+					<p class="mb-2">
+						EQ Eight has three filter types you will use for the
+						sub. The High-Pass filter which looks like a ramp
+						sloping upward from left to right, the Bell filter which
+						looks like a diamond shape, and the Low-Pass filter
+						which looks like a ramp sloping downward from left to
+						right — this is the opposite of the high-pass and cuts
+						everything above the frequency you set.
+					</p>
+					<p class="mb-2">
+						Band 1 — Remove the Rumble. Set the filter type to
+						High-Pass (the ramp sloping upward) and place it at 30
+						Hz. Just like the kick, this removes ultra low
+						frequencies that you cannot hear but waste headroom and
+						clutter your mix. No Gain or Q adjustment needed here,
+						just set the frequency and the filter does the rest.
+					</p>
+					<p class="mb-2">
+						Band 2 — Boost the Fundamental. Set the filter type to
+						Bell (the diamond icon). A sub sine lives lower than a
+						kick, so look at the spectrum analyzer and find the
+						biggest peak — for most sub basses this sits around
+						80–100 Hz. Place Band 2 right at that peak and add a
+						gentle boost of +2 to +3 dB with a Q of around 1.0 to
+						reinforce the core weight and tone of the sub. Let the
+						spectrum analyzer guide exactly where to place it rather
+						than using a fixed number every time.
+					</p>
+					<p class="mb-2">
+						Band 3 — Low-Pass Filter. This is the most important
+						band for the sub. Set the filter type to Low-Pass (the
+						ramp sloping downward) and place it at around 150–200
+						Hz. This cuts everything above that point so the sub
+						stays locked in its own low frequency lane and does not
+						compete with your bassline, pads, or any other elements
+						that live higher up in the spectrum. No Gain or Q
+						adjustment needed here, just set the frequency and the
+						filter does the rest. Note that you only need 3 bands
+						for the sub — do not activate any further bands as they
+						will be redundant and unnecessary.
+					</p>
+					<p class="mb-2">
+						The Golden Rule — always do all of this with your full
+						mix playing, never in solo. The sub needs to work
+						alongside your kick above everything else, and if you
+						have a sidechain compressor set up from the kick to the
+						sub, the EQ and the sidechain work together to keep the
+						low end tight, punchy, and clean.
+					</p>
+					<Image
+						src={eqEightSub}
+						alt="A bird sitting on a nest of eggs."
+					/>
+				</div>
+			</div>
+		</div>
+	</main>
+</div>
