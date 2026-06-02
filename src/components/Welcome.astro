@@ -196,6 +196,33 @@ import reverb from "../images/reverb.png";
 			</div>
 		</div>
 		<div class="m-4 p-4 border rounded-r-xl">
+			<p class="mb-2">groove</p>
+			<p>
+				Groove in Ableton is a system for injecting rhythmic feel and
+				humanization into your clips by subtly shifting the timing and
+				velocity of notes or audio warp markers away from the rigid
+				grid. Rather than every hit landing exactly on the beat, groove
+				introduces micro-timing variations — the kind that make a drum
+				pattern feel like it was played by a human rather than
+				programmed by a machine.
+			</p>
+			<p>
+				The Groove Pool is the central hub where you manage all of this:
+				it holds a collection of groove presets (either from Ableton's
+				built-in library or extracted directly from audio clips using
+				the "Extract Groove" function), and lets you dial in how much of
+				that feel is applied via parameters like Timing, Random,
+				Velocity, and Quantize amount.
+			</p>
+			<p>
+				You can apply a groove to multiple clips at once and then
+				fine-tune the intensity globally from the pool, making it a
+				powerful tool for locking your drums, bass, and melodic elements
+				to the same rhythmic pocket — or for giving each element its own
+				sense of feel.
+			</p>
+		</div>
+		<div class="m-4 p-4 border rounded-r-xl">
 			<p>audio effects</p>
 			<div class="my-4 p-4 border rounded-r-xl">
 				<p class="mb-2">"Drum Buss"</p>
@@ -270,95 +297,102 @@ import reverb from "../images/reverb.png";
 				<Image src={reverb} alt="A bird sitting on a nest of eggs." />
 				<div class="my-4 p-4 border rounded-r-xl">
 					<p class="mb-2">
-						<span class="font-bold">Input Filter - </span>This determines which frequencies of your
-						signal get fed into the reverb before it does anything.
-						The Lo Cut removes low frequencies from entering the
-						reverb, which is something you almost always want to do
-						because bass frequencies in a reverb tail quickly make a
-						mix sound muddy and undefined. The Hi Cut removes high
-						frequencies from entering the reverb, which can soften
-						and warm the reverb's character. Think of it as a gate
-						that shapes what the reverb is actually working with
-						before it processes anything.
+						<span class="font-bold">Input Filter - </span>This
+						determines which frequencies of your signal get fed into
+						the reverb before it does anything. The Lo Cut removes
+						low frequencies from entering the reverb, which is
+						something you almost always want to do because bass
+						frequencies in a reverb tail quickly make a mix sound
+						muddy and undefined. The Hi Cut removes high frequencies
+						from entering the reverb, which can soften and warm the
+						reverb's character. Think of it as a gate that shapes
+						what the reverb is actually working with before it
+						processes anything.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Early Reflections - </span>These are the very first echoes that
-						occur when sound hits the nearest surfaces in a room.
-						They arrive at your ears quickly and distinctly before
-						the main reverb tail develops. The Amount controls how
-						loud these initial reflections are, the Rate controls
-						how fast they modulate if Spin is enabled, and Shape
-						affects the overall character and density of those first
+						<span class="font-bold">Early Reflections - </span>These
+						are the very first echoes that occur when sound hits the
+						nearest surfaces in a room. They arrive at your ears
+						quickly and distinctly before the main reverb tail
+						develops. The Amount controls how loud these initial
+						reflections are, the Rate controls how fast they
+						modulate if Spin is enabled, and Shape affects the
+						overall character and density of those first
 						reflections. In practical terms, early reflections
 						contribute a lot to how you perceive the size and
 						immediacy of a space. A room feels small when early
 						reflections arrive quickly and closely together.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Diffusion Network - </span>This is the main body of the reverb,
-						the long tail that follows the early reflections. The
-						graph controls how different frequencies decay over
-						time, so you can have high frequencies fade away faster
-						than low ones or vice versa. Diffusion controls how
-						smooth or grainy the tail sounds, higher diffusion means
-						a smoother and more blended tail while lower diffusion
-						can sound more textured and complex. Scale affects the
-						overall size of the diffusion pattern.
+						<span class="font-bold">Diffusion Network - </span>This
+						is the main body of the reverb, the long tail that
+						follows the early reflections. The graph controls how
+						different frequencies decay over time, so you can have
+						high frequencies fade away faster than low ones or vice
+						versa. Diffusion controls how smooth or grainy the tail
+						sounds, higher diffusion means a smoother and more
+						blended tail while lower diffusion can sound more
+						textured and complex. Scale affects the overall size of
+						the diffusion pattern.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Predelay - </span>This is the gap in milliseconds between the dry
-						signal playing and the reverb tail beginning. Even a
-						small predelay of a few milliseconds can do a lot for
-						clarity, because it lets the original sound hit your
-						ears cleanly before the reverb washes in behind it. This
-						is particularly important on vocals and snares where you
-						need the transient, the initial attack of the sound, to
-						remain sharp and defined.
+						<span class="font-bold">Predelay - </span>This is the
+						gap in milliseconds between the dry signal playing and
+						the reverb tail beginning. Even a small predelay of a
+						few milliseconds can do a lot for clarity, because it
+						lets the original sound hit your ears cleanly before the
+						reverb washes in behind it. This is particularly
+						important on vocals and snares where you need the
+						transient, the initial attack of the sound, to remain
+						sharp and defined.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Size - </span>Controls how large the simulated space feels. A
-						small size sounds like a tight room or chamber, a large
-						size sounds like a cathedral or arena. This works hand
-						in hand with Decay.
+						<span class="font-bold">Size - </span>Controls how large
+						the simulated space feels. A small size sounds like a
+						tight room or chamber, a large size sounds like a
+						cathedral or arena. This works hand in hand with Decay.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Decay - </span>This is how long the reverb tail rings out before
-						it fades to silence, measured in seconds. Short decay
-						times feel intimate and tight, long decay times feel
-						expansive and atmospheric. For a house music bassline
-						you want virtually no reverb or an extremely short
-						decay. For pads and atmospheres a longer decay can sound
-						beautiful.
+						<span class="font-bold">Decay - </span>This is how long
+						the reverb tail rings out before it fades to silence,
+						measured in seconds. Short decay times feel intimate and
+						tight, long decay times feel expansive and atmospheric.
+						For a house music bassline you want virtually no reverb
+						or an extremely short decay. For pads and atmospheres a
+						longer decay can sound beautiful.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Stereo - </span>Controls how wide the reverb is in the stereo
-						field. Higher values spread the reverb further left and
-						right, which can add a real sense of width and space to
-						your mix.
+						<span class="font-bold">Stereo - </span>Controls how
+						wide the reverb is in the stereo field. Higher values
+						spread the reverb further left and right, which can add
+						a real sense of width and space to your mix.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Density - </span>Controls how many individual reflections make up
-						the reverb tail. Higher density sounds smoother and more
-						lush, lower density sounds more sparse and you can
-						sometimes hear individual echoes within the tail.
+						<span class="font-bold">Density - </span>Controls how
+						many individual reflections make up the reverb tail.
+						Higher density sounds smoother and more lush, lower
+						density sounds more sparse and you can sometimes hear
+						individual echoes within the tail.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Dry/Wet - </span>The balance between the original unprocessed
-						signal and the reverb effect. When Reverb is placed
-						directly on an instrument or vocal track, you typically
-						want this fairly low, somewhere between 15 and 30%, so
-						the source sound stays upfront. When used on a dedicated
-						send/return track, which is the more common and flexible
-						approach in mixing, you set it to 100% wet because the
-						dry signal is already coming through its own channel.
+						<span class="font-bold">Dry/Wet - </span>The balance
+						between the original unprocessed signal and the reverb
+						effect. When Reverb is placed directly on an instrument
+						or vocal track, you typically want this fairly low,
+						somewhere between 15 and 30%, so the source sound stays
+						upfront. When used on a dedicated send/return track,
+						which is the more common and flexible approach in
+						mixing, you set it to 100% wet because the dry signal is
+						already coming through its own channel.
 					</p>
 					<p class="mb-2">
-						<span class="font-bold">Chorus - </span>Adds a subtle modulation to the reverb tail which
-						gives it a slightly animated, shimmering quality. The
-						Amount and Rate controls determine how intense and how
-						fast that modulation is. Keeping both values low gives a
-						gentle, natural movement. Pushing them higher can make
-						the reverb feel more lush but also less realistic.
+						<span class="font-bold">Chorus - </span>Adds a subtle
+						modulation to the reverb tail which gives it a slightly
+						animated, shimmering quality. The Amount and Rate
+						controls determine how intense and how fast that
+						modulation is. Keeping both values low gives a gentle,
+						natural movement. Pushing them higher can make the
+						reverb feel more lush but also less realistic.
 					</p>
 				</div>
 			</div>
