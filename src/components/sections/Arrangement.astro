@@ -1,177 +1,74 @@
 ---
 import Card from "../Card.astro";
+
+const sections = [
+	{
+		name: "Intro",
+		bars: "32 bars",
+		body: [
+			"The most functional section of the track. Typically just kick, hi-hats, clap/snare, and maybe a subtle percussion loop. No bassline, no melody, no vocals. The goal is to give a DJ a clean, neutral 32 bars to work with. If you're making a track for DJs specifically, never shortchange the intro — a 16 bar intro forces the DJ to rush their mix. Think of it as a handshake between your track and the DJ — the more room you give them, the more they'll love playing your record. A common technique is to have your kick and hi-hat pattern locked in from bar one so the incoming DJ has a clear rhythmic reference to sync against. Some producers also add a very subtle, almost subliminal pad underneath just to hint at the key of the track without giving anything away.",
+		],
+	},
+	{
+		name: "Buildup / Rise",
+		bars: "16 bars",
+		body: [
+			"This is where you start introducing the identity of your track. The bassline usually enters here, maybe a synth stab or chord stab, and you begin hinting at the main melodic elements without fully revealing them. A lot of producers use a high-pass filter sweeping open across these 16 bars to create a sense of things arriving. Tension is the whole point here — you're making a promise to the dancefloor that something is coming. A useful Ableton technique is to automate a filter cutoff on your main synth or bass so it gradually opens up across the full 16 bars, giving a physical sense of forward motion. You can also start introducing your clap or snare here if it wasn't in the intro, which adds to the sense of the track waking up. Think of these 16 bars as a runway — by the time you hit bar 16 the listener should feel like they absolutely need whatever comes next.",
+		],
+	},
+	{
+		name: "Main Section",
+		bars: "32-64 bars",
+		body: [
+			"Everything is in. Kick, bass, melody, vocals if you have them, percussion layers, all of it. This is the body of your track and where the groove needs to be airtight. Most producers split this into two 16 bar loops with subtle variations — maybe a percussion element drops out for 8 bars, or a synth line shifts — to keep it from feeling static. The longer your main section, the more internal variation it needs. In Ableton, a good approach is to build your core 8 bar loop first until it feels undeniable, then duplicate it and start adding and subtracting elements to create the variation across 32 or 64 bars. Pay close attention to your low end here — your kick and bass need to work together rhythmically and tonally, which means making sure your bassline notes are tuned to the root or fifth of your key. The main section is also where a DJ is most likely to be mixing over you, so having a strong, consistent groove that doesn't shift too dramatically makes their job easier and makes your track more mixable.",
+		],
+	},
+	{
+		name: "Breakdown",
+		bars: "16-32 bars",
+		body: [
+			"Drums disappear, bass disappears, and you're left with the emotional core of the track — pads, chords, maybe a filtered or reverb-soaked vocal. This section lives or dies on your chord progression and atmosphere. 16 bars feels tight and punchy, 32 bars gives more room to breathe and makes the drop hit harder when it comes. This is where the track stops being a groove and becomes a feeling — it's the moment that makes people close their eyes on the dancefloor. In Ableton, heavy reverb and long delay tails are your best friends here — let your pad chords ring out and blur into each other to create a sense of weightlessness and space. If you have a vocal, this is where you want it most exposed, maybe running it through a low-pass filter or adding a tape-style delay to give it an intimate, dreamlike quality. A subtle trick is to let a very quiet sub bass hum underneath just to keep the body of the room engaged even while the groove is gone — the crowd won't consciously hear it but they'll feel the floor.",
+		],
+	},
+	{
+		name: "Drop",
+		bars: "4-8 bars",
+		body: [
+			"The moment of re-entry after the breakdown. The drums and bass slam back in at full energy and the impact is entirely emotional — it's the payoff for all the tension built during the breakdown. In house music the drop tends to be less dramatic than in EDM, but it still needs to land with weight. Some producers add a single bar of silence or a snare roll right before it to make the re-entry hit even harder. In Ableton, try automating a short volume dip or a low-pass filter closing right at the very end of the breakdown — even just one beat of near-silence before the kick returns makes the drop feel like a physical impact. The drop is also a great place to introduce a new percussive element or a subtle new texture that wasn't in the first main section, planting a seed for what the second main section will develop. Keep the drop itself relatively simple and clean — this is not the moment to introduce complexity, it's the moment to let the rhythm do all the work.",
+		],
+	},
+	{
+		name: "Second Main Section",
+		bars: "32-64 bars",
+		body: [
+			"After the drop you're back into the full groove, but this should feel like an elevated version of your first main section. The listener has been through the breakdown and the emotional moment, so the same groove hits differently now. A lot of producers introduce something new here that wasn't in the first main section — a new synth layer, a counter melody, or a vocal ad lib — to signal that this is the peak of the track rather than just a repeat. In Ableton, a simple but effective approach is to take your first main section session clips and duplicate them, then layer one new element on top that adds brightness or energy — a high synth line, an extra shaker, or a vocal chop loop works well. This is also the section where you can afford to be a little more aggressive with your percussion, adding more layers or pushing the hi-hat pattern to add urgency. Think of the second main section as the track making good on every promise it made in the buildup and breakdown — it should feel like the fullest, richest version of your groove.",
+		],
+	},
+	{
+		name: "Outro",
+		bars: "32 bars",
+		body: [
+			"The mirror image of your intro. Elements drop away one by one until you're back to just drums and maybe a faint pad. The bassline is usually the last melodic element to leave. Same logic as the intro — give the next DJ 32 clean bars to work with. A short outro is one of the most frustrating things a producer can do to a DJ. In Ableton, a clean way to build your outro is to literally reverse-engineer your intro — take the same clips and automate elements muting one by one every 8 bars so the strip-down feels gradual and intentional rather than abrupt. Be careful with reverb tails here — if a pad or synth has a long reverb decay, make sure it fades out fully before your final bars or it will bleed into the next DJ's track in an ugly way. Ending on a perfectly clean 8 bars of just kick and hi-hat is a gift to whoever is playing after you.",
+		],
+	},
+];
 ---
 
 <Card top>
 	<p>arrangement</p>
-	<Card>
-		<p class="mb-2">
-			<span class="italic">Intro</span>
-			<span class="text-emerald-500">(32 bars)</span>
-		</p>
-		<p>
-			The most functional section of the track. Typically just
-			kick, hi-hats, clap/snare, and maybe a subtle percussion
-			loop. No bassline, no melody, no vocals. The goal is to give
-			a DJ a clean, neutral 32 bars to work with. If you're making
-			a track for DJs specifically, never shortchange the intro —
-			a 16 bar intro forces the DJ to rush their mix. Think of it
-			as a handshake between your track and the DJ — the more room
-			you give them, the more they'll love playing your record. A
-			common technique is to have your kick and hi-hat pattern
-			locked in from bar one so the incoming DJ has a clear
-			rhythmic reference to sync against. Some producers also add
-			a very subtle, almost subliminal pad underneath just to hint
-			at the key of the track without giving anything away.
-		</p>
-	</Card>
-	<Card>
-		<p class="mb-2">
-			<span class="italic">Buildup / Rise</span>
-			<span class="text-emerald-500">(16 bars)</span>
-		</p>
-		<p>
-			This is where you start introducing the identity of your
-			track. The bassline usually enters here, maybe a synth stab
-			or chord stab, and you begin hinting at the main melodic
-			elements without fully revealing them. A lot of producers
-			use a high-pass filter sweeping open across these 16 bars to
-			create a sense of things arriving. Tension is the whole
-			point here — you're making a promise to the dancefloor that
-			something is coming. A useful Ableton technique is to
-			automate a filter cutoff on your main synth or bass so it
-			gradually opens up across the full 16 bars, giving a
-			physical sense of forward motion. You can also start
-			introducing your clap or snare here if it wasn't in the
-			intro, which adds to the sense of the track waking up. Think
-			of these 16 bars as a runway — by the time you hit bar 16
-			the listener should feel like they absolutely need whatever
-			comes next.
-		</p>
-	</Card>
-	<Card>
-		<p class="mb-2">
-			<span class="italic">Main Section</span>
-			<span class="text-emerald-500">(32-64 bars)</span>
-		</p>
-		<p>
-			Everything is in. Kick, bass, melody, vocals if you have
-			them, percussion layers, all of it. This is the body of your
-			track and where the groove needs to be airtight. Most
-			producers split this into two 16 bar loops with subtle
-			variations — maybe a percussion element drops out for 8
-			bars, or a synth line shifts — to keep it from feeling
-			static. The longer your main section, the more internal
-			variation it needs. In Ableton, a good approach is to build
-			your core 8 bar loop first until it feels undeniable, then
-			duplicate it and start adding and subtracting elements to
-			create the variation across 32 or 64 bars. Pay close
-			attention to your low end here — your kick and bass need to
-			work together rhythmically and tonally, which means making
-			sure your bassline notes are tuned to the root or fifth of
-			your key. The main section is also where a DJ is most likely
-			to be mixing over you, so having a strong, consistent groove
-			that doesn't shift too dramatically makes their job easier
-			and makes your track more mixable.
-		</p>
-	</Card>
-	<Card>
-		<p class="mb-2">
-			<span class="italic">Breakdown</span>
-			<span class="text-emerald-500">(16-32 bars)</span>
-		</p>
-		<p>
-			Drums disappear, bass disappears, and you're left with the
-			emotional core of the track — pads, chords, maybe a filtered
-			or reverb-soaked vocal. This section lives or dies on your
-			chord progression and atmosphere. 16 bars feels tight and
-			punchy, 32 bars gives more room to breathe and makes the
-			drop hit harder when it comes. This is where the track stops
-			being a groove and becomes a feeling — it's the moment that
-			makes people close their eyes on the dancefloor. In Ableton,
-			heavy reverb and long delay tails are your best friends here
-			— let your pad chords ring out and blur into each other to
-			create a sense of weightlessness and space. If you have a
-			vocal, this is where you want it most exposed, maybe running
-			it through a low-pass filter or adding a tape-style delay to
-			give it an intimate, dreamlike quality. A subtle trick is to
-			let a very quiet sub bass hum underneath just to keep the
-			body of the room engaged even while the groove is gone — the
-			crowd won't consciously hear it but they'll feel the floor.
-		</p>
-	</Card>
-	<Card>
-		<p class="mb-2">
-			<span class="italic">Drop</span>
-			<span class="text-emerald-500">(4-8 bars)</span>
-		</p>
-		<p>
-			The moment of re-entry after the breakdown. The drums and
-			bass slam back in at full energy and the impact is entirely
-			emotional — it's the payoff for all the tension built during
-			the breakdown. In house music the drop tends to be less
-			dramatic than in EDM, but it still needs to land with
-			weight. Some producers add a single bar of silence or a
-			snare roll right before it to make the re-entry hit even
-			harder. In Ableton, try automating a short volume dip or a
-			low-pass filter closing right at the very end of the
-			breakdown — even just one beat of near-silence before the
-			kick returns makes the drop feel like a physical impact. The
-			drop is also a great place to introduce a new percussive
-			element or a subtle new texture that wasn't in the first
-			main section, planting a seed for what the second main
-			section will develop. Keep the drop itself relatively simple
-			and clean — this is not the moment to introduce complexity,
-			it's the moment to let the rhythm do all the work.
-		</p>
-	</Card>
-	<Card>
-		<p class="mb-2">
-			<span class="italic">Second Main Section</span>
-			<span class="text-emerald-500">(32-64 bars)</span>
-		</p>
-		<p>
-			After the drop you're back into the full groove, but this
-			should feel like an elevated version of your first main
-			section. The listener has been through the breakdown and the
-			emotional moment, so the same groove hits differently now. A
-			lot of producers introduce something new here that wasn't in
-			the first main section — a new synth layer, a counter
-			melody, or a vocal ad lib — to signal that this is the peak
-			of the track rather than just a repeat. In Ableton, a simple
-			but effective approach is to take your first main section
-			session clips and duplicate them, then layer one new element
-			on top that adds brightness or energy — a high synth line,
-			an extra shaker, or a vocal chop loop works well. This is
-			also the section where you can afford to be a little more
-			aggressive with your percussion, adding more layers or
-			pushing the hi-hat pattern to add urgency. Think of the
-			second main section as the track making good on every
-			promise it made in the buildup and breakdown — it should
-			feel like the fullest, richest version of your groove.
-		</p>
-	</Card>
-	<Card>
-		<p class="mb-2">
-			<span class="italic">Outro</span>
-			<span class="text-emerald-500">(32 bars)</span>
-		</p>
-		<p>
-			The mirror image of your intro. Elements drop away one by
-			one until you're back to just drums and maybe a faint pad.
-			The bassline is usually the last melodic element to leave.
-			Same logic as the intro — give the next DJ 32 clean bars to
-			work with. A short outro is one of the most frustrating
-			things a producer can do to a DJ. In Ableton, a clean way to
-			build your outro is to literally reverse-engineer your intro
-			— take the same clips and automate elements muting one by
-			one every 8 bars so the strip-down feels gradual and
-			intentional rather than abrupt. Be careful with reverb tails
-			here — if a pad or synth has a long reverb decay, make sure
-			it fades out fully before your final bars or it will bleed
-			into the next DJ's track in an ugly way. Ending on a
-			perfectly clean 8 bars of just kick and hi-hat is a gift to
-			whoever is playing after you.
-		</p>
-	</Card>
+	{
+		sections.map(({ name, bars, body }) => (
+			<Card>
+				<p class="mb-2">
+					<span class="text-amber-700 font-semibold">{name}</span>
+					<span class="font-semibold text-indigo-700 underline decoration-pink-500 decoration-wavy">
+						{bars}
+					</span>
+				</p>
+				{body.map((paragraph) => (
+					<p class={body.length > 1 ? "mb-2" : ""}>{paragraph}</p>
+				))}
+			</Card>
+		))
+	}
 </Card>
