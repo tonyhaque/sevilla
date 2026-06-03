@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import joshBakerKickVariation from "../../images/josh-baker-kick-variation.png";
+import Card from "../Card.astro";
+---
+
+<Card top>
+	<p>tracks/elements</p>
+	<Card>
+		<p class="mb-2">Kick</p>
+		<p class="mb-2">
+			Learnt how to make the kick more interesting from a <a
+				href="https://www.youtube.com/watch?v=Qlk89LDp4KQ"
+				target="_blank"
+				rel="noopener noreferrer">Josh Baker Syntho video</a
+			>
+		</p>
+		<Image
+			src={joshBakerKickVariation}
+			alt="A bird sitting on a nest of eggs."
+		/>
+	</Card>
+</Card>

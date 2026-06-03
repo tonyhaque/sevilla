@@ -1,0 +1,10 @@
+---
+interface Props {
+	top?: boolean;
+}
+const { top = false } = Astro.props;
+---
+
+<div class={`${top ? "m-4" : "my-4"} p-4 border rounded-r-xl`}>
+	<slot />
+</div>
