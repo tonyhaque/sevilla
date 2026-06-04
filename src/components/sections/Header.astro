@@ -1,0 +1,34 @@
+---
+const paragraphs = [
+    {
+        en: "In October 2025, something shifted. What began as a TikTok Live DJ set turned into a rediscovery, a moment where the music I had always loved came rushing back with a force I could not ignore. The energy in those streams was undeniable, not just in the house music itself, but in the connection it created between me and everyone who tuned in. That night, I made a quiet but unshakeable decision: I would dedicate myself fully to becoming a house music DJ and producer.",
+        es: "En octubre de 2025, algo cambió. Lo que comenzó como un set de DJ en TikTok Live se convirtió en un redescubrimiento, un momento en el que la música que siempre había amado regresó con una fuerza que no pude ignorar. La energía en esas transmisiones era innegable, no solo en la música house en sí, sino en la conexión que creó entre yo y todos los que se conectaron. Esa noche tomé una decisión silenciosa pero inquebrantable: me dedicaría por completo a convertirme en DJ y productor de música house.",
+    },
+    {
+        en: "Then in May 2026, I traveled to Spain with my entire family, and two and a half weeks across that country did something to me that I am still processing. Watching my family move through those cities, seeing the joy on their faces, the wonder, the gratitude, the way they took in every street, every meal, every moment, gave me a calm and a fullness I had not felt in a very long time. There was sheer pleasure in those days, a kind of collective happiness that felt rare and almost sacred. Spain did not just move me. It moved all of us.",
+        es: "Luego, en mayo de 2026, viajé a España con toda mi familia, y dos semanas y media recorriendo ese país me hicieron algo que todavía estoy procesando. Ver a mi familia moverse por esas ciudades, ver la alegría en sus rostros, la maravilla, la gratitud, la forma en que absorbían cada calle, cada comida, cada momento, me dio una calma y una plenitud que no había sentido en mucho tiempo. Hubo un placer puro en esos días, una felicidad colectiva que se sintió rara y casi sagrada. España no solo me conmovió a mí. Nos conmovió a todos.",
+    },
+    {
+        en: "And in that, it revealed something I had not anticipated: my deepest goal is not just to one day live there myself, but to bring my parents with me, to plant roots in that country together, surrounded by everything that trip made us feel. To wake up in Sevilla, the city that touched me most profoundly, and call it home. To produce house music from that place, to tour across Europe, to eventually stand behind the decks in Ibiza and feel the full weight of everything it took to get there. That is the dream. Not a fantasy held loosely, but a destination being worked toward with intention, every single day.",
+        es: "Y en eso, reveló algo que no había anticipado: mi objetivo más profundo no es solo vivir allí algún día, sino llevar a mis padres conmigo, echar raíces juntos en ese país, rodeados de todo lo que ese viaje nos hizo sentir. Despertar en Sevilla, la ciudad que más me tocó, y llamarla hogar. Producir música house desde ese lugar, recorrer Europa, y eventualmente estar detrás de los platos en Ibiza y sentir el peso de todo lo que costó llegar hasta ahí. Ese es el sueño. No una fantasía sostenida sin firmeza, sino un destino que se trabaja con intención, cada día.",
+    },
+    {
+        en: "So this platform carries that name, and everything it holds is a testament to the work being put in to make that vision real. The hours inside Ableton learning to craft house music from the ground up. The live sessions on social media, building an audience one stream at a time. The pursuit of real gigs, real rooms, real crowds. The Spanish lessons that are slowly turning a dream into a plan. Every piece of this journey lives here, documented in both English and Spanish, because the goal has never just been to play music. It has been to build a life around it, with the people who matter most beside me, in the country that called to all of us, doing what I was always meant to do.",
+        es: "Entonces esta plataforma lleva ese nombre, y todo lo que contiene es un testimonio del trabajo que se está realizando para hacer realidad esa visión. Las horas dentro de Ableton aprendiendo a crear música house desde cero. Las sesiones en vivo en redes sociales, construyendo una audiencia una transmisión a la vez. La búsqueda de presentaciones reales, salas reales, públicos reales. Las lecciones de español que poco a poco convierten un sueño en un plan. Cada parte de este camino vive aquí, documentado en inglés y español, porque el objetivo nunca fue solo tocar música. Ha sido construir una vida alrededor de ella, con las personas que más importan a mi lado, en el país que nos llamó a todos, haciendo lo que siempre estuve destinado a hacer.",
+    },
+];
+---
+
+<div class="ml-4">
+    <h1 class="text-6xl font-thin my-4">Sevilla 🍊</h1>
+    <div class="mb-6">
+        {
+            paragraphs.map((p) => (
+                <div class="mb-4">
+                    <p class="mb-2">{p.en}</p>
+                    <p class="text-red-700 italic">{p.es}</p>
+                </div>
+            ))
+        }
+    </div>
+</div>
