@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import eqEightKick from "../../images/eq-eight-kick.png";
 import eqEightSub from "../../images/eq-eight-sub.png";
+import eqEightSnare from "../../images/eq-eight-snare.png";
+import eqEightFilters from "../../images/eq-eight-filters.png";
 import reverb from "../../images/reverb.png";
 import Card from "../Card.astro";
 ---
@@ -75,7 +77,7 @@ import Card from "../Card.astro";
 		<Image src={reverb} alt="A bird sitting on a nest of eggs." />
 		<Card>
 			<p class="mb-2">
-				<span class="font-bold">Input Filter - </span>This determines
+				<span class="font-bold">Input filter - </span>This determines
 				which frequencies of your signal get fed into the reverb before
 				it does anything. The Lo Cut removes low frequencies from
 				entering the reverb, which is something you almost always want
@@ -218,9 +220,9 @@ import Card from "../Card.astro";
 				sweet spot for a tight house music low end.
 			</p>
 			<p class="mb-2">
-				The SC Filter controls what frequency the compressor listens to
+				The SC filter controls what frequency the compressor listens to
 				inside the sidechain signal before it reacts. Setting the SC
-				Filter Freq to 80 Hz tells the compressor to focus on the low
+				filter Freq to 80 Hz tells the compressor to focus on the low
 				frequency thud of the kick rather than its full signal including
 				the click and high frequency content — this makes the sidechain
 				more precise and musical. Leave the Res at 0.71 and SC Gain at
@@ -262,7 +264,73 @@ import Card from "../Card.astro";
 		</Card>
 	</Card>
 	<Card>
-		<p>"EQ Eight"</p>
+		<p class="mb-2">"EQ Eight"</p>
+		<div class="flex flex-row">
+			<div class="basis-9/10">
+				<p>
+					Each filter has a chooser that allows you to switch between
+					eight responses. From top to bottom in the choosers, these
+					are:
+				</p>
+				<ul class="list-disc list-inside">
+					<li>
+						48 dB/octave Low cut (<span
+							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+							>cuts</span
+						> frequencies below the specified frequency);
+					</li>
+					<li>
+						12 dB/octave Low cut (<span
+							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+							>cuts</span
+						> frequencies below the specified frequency);
+					</li>
+					<li>
+						Low shelf (<span
+							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+							>boosts or cuts</span
+						> frequencies lower than the specified frequency);
+					</li>
+					<li>
+						Peak (<span
+							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+							>boosts or cuts</span
+						> over a range of frequencies);
+					</li>
+					<li>
+						Notch (<span
+							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+							>sharply cuts</span
+						> frequencies within a narrow range);
+					</li>
+					<li>
+						High shelf (<span
+							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+							>boosts or cuts</span
+						> frequencies higher than the specified frequency);
+					</li>
+					<li>
+						12 dB/octave High cut (<span
+							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+							>cuts</span
+						> frequencies above the specified frequency). <span
+							class="font-semibold text-cyan-600"
+							>(Highlighted in light blue)</span
+						>
+					</li>
+					<li>
+						48 dB/octave High cut (<span
+							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+							>cuts</span
+						> frequencies above the specified frequency).
+					</li>
+				</ul>
+			</div>
+			<Image
+				src={eqEightFilters}
+				alt="A bird sitting on a nest of eggs."
+			/>
+		</div>
 		<Card>
 			<p class="mb-2">Kick</p>
 			<p class="mb-2">
@@ -274,49 +342,45 @@ import Card from "../Card.astro";
 			</p>
 			<p class="mb-2">
 				EQ Eight has two filter types you will use for the kick. The
-				first is the High-Pass filter, which looks like a ramp sloping
-				upward from left to right — this cuts everything below the
+				first is the Low cut filter, which cuts everything below the
 				frequency you set, letting everything above pass through. The
-				second is the Bell filter, which looks like a diamond shape —
-				this boosts or cuts a specific frequency while leaving
-				everything around it relatively untouched.
+				second is the Peak filter, which boosts or cuts a specific
+				frequency while leaving everything around it relatively
+				untouched.
 			</p>
 			<p class="mb-2">
-				Band 1 — Remove the Rumble. Set the filter type to High-Pass
-				(the ramp icon, first shape on the left in the filter row) and
+				Band 1 — Remove the Rumble. Set the filter type to Low cut and
 				place it at 30 Hz. This removes ultra low frequencies that you
 				cannot even hear but silently eat up headroom and make your mix
 				sound weak and cluttered. No Gain or Q adjustment needed here,
 				just set the frequency and the filter does the rest.
 			</p>
 			<p class="mb-2">
-				Band 2 — Boost the Body and Thud. Set the filter type to Bell
-				(the diamond icon). Look at the spectrum analyzer and find where
-				the biggest peak is — this is your kick's fundamental tone and
-				where its power lives. For most house kicks this sits somewhere
-				between 60–100 Hz, so place Band 2 there and add a gentle boost
-				of +2 to +3 dB with a Q of around 1.0. Think of this as turning
-				up the punch of the kick, but keep it subtle as a little goes a
-				long way here.
+				Band 2 — Boost the Body and Thud. Set the filter type to Peak.
+				Look at the spectrum analyzer and find where the biggest peak is
+				— this is your kick's fundamental tone and where its power
+				lives. For most house kicks this sits somewhere between 60–100
+				Hz, so place Band 2 there and add a gentle boost of +2 to +3 dB
+				with a Q of around 1.0. Think of this as turning up the punch of
+				the kick, but keep it subtle as a little goes a long way here.
 			</p>
 			<p class="mb-2">
-				Band 3 — Cut the Mud. Set the filter type to Bell (the diamond
-				icon). This is the zone that makes kicks sound boxy, hollow, and
-				cheap if there is too much of it. Listen carefully for a
-				cardboard-like or tubby tone and place Band 3 somewhere in the
-				200–400 Hz range, cutting by -3 to -4 dB with a Q of around 1.5
-				to keep the cut focused and surgical. Think of this as removing
-				the cheap hollow sound and replacing it with something tight and
-				solid.
+				Band 3 — Cut the Mud. Set the filter type to Peak. This is the
+				zone that makes kicks sound boxy, hollow, and cheap if there is
+				too much of it. Listen carefully for a cardboard-like or tubby
+				tone and place Band 3 somewhere in the 200–400 Hz range, cutting
+				by -3 to -4 dB with a Q of around 1.5 to keep the cut focused
+				and surgical. Think of this as removing the cheap hollow sound
+				and replacing it with something tight and solid.
 			</p>
 			<p class="mb-2">
-				Band 4 — Add the Click and Attack. Set the filter type to Bell
-				(the diamond icon). Place Band 4 around 3–4 kHz and add a gentle
-				boost of +2 to +3 dB with a Q of around 1.0 to bring out the
-				knock and attack of the kick. This is what makes your kick
-				audible on small speakers, earbuds, and phones. If your kick
-				already sounds punchy and cuts through naturally, go easy here
-				or skip it entirely — always let your ears decide.
+				Band 4 — Add the Click and Attack. Set the filter type to Peak.
+				Place Band 4 around 3–4 kHz and add a gentle boost of +2 to +3
+				dB with a Q of around 1.0 to bring out the knock and attack of
+				the kick. This is what makes your kick audible on small
+				speakers, earbuds, and phones. If your kick already sounds
+				punchy and cuts through naturally, go easy here or skip it
+				entirely — always let your ears decide.
 			</p>
 			<p class="mb-2">
 				The Golden Rule — always do all of this with your full mix
@@ -338,41 +402,36 @@ import Card from "../Card.astro";
 			</p>
 			<p class="mb-2">
 				EQ Eight has three filter types you will use for the sub. The
-				High-Pass filter which looks like a ramp sloping upward from
-				left to right, the Bell filter which looks like a diamond shape,
-				and the Low-Pass filter which looks like a ramp sloping downward
-				from left to right — this is the opposite of the high-pass and
+				Low cut filter, the Peak filter, and the High cut filter, which
 				cuts everything above the frequency you set.
 			</p>
 			<p class="mb-2">
-				Band 1 — Remove the Rumble. Set the filter type to High-Pass
-				(the ramp sloping upward) and place it at 30 Hz. Just like the
-				kick, this removes ultra low frequencies that you cannot hear
-				but waste headroom and clutter your mix. No Gain or Q adjustment
-				needed here, just set the frequency and the filter does the
-				rest.
+				Band 1 — Remove the Rumble. Set the filter type to Low cut and
+				place it at 30 Hz. Just like the kick, this removes ultra low
+				frequencies that you cannot hear but waste headroom and clutter
+				your mix. No Gain or Q adjustment needed here, just set the
+				frequency and the filter does the rest.
 			</p>
 			<p class="mb-2">
-				Band 2 — Boost the Fundamental. Set the filter type to Bell (the
-				diamond icon). A sub sine lives lower than a kick, so look at
-				the spectrum analyzer and find the biggest peak — for most sub
-				basses this sits around 80–100 Hz. Place Band 2 right at that
-				peak and add a gentle boost of +2 to +3 dB with a Q of around
-				1.0 to reinforce the core weight and tone of the sub. Let the
-				spectrum analyzer guide exactly where to place it rather than
-				using a fixed number every time.
+				Band 2 — Boost the Fundamental. Set the filter type to Peak. A
+				sub sine lives lower than a kick, so look at the spectrum
+				analyzer and find the biggest peak — for most sub basses this
+				sits around 80–100 Hz. Place Band 2 right at that peak and add a
+				gentle boost of +2 to +3 dB with a Q of around 1.0 to reinforce
+				the core weight and tone of the sub. Let the spectrum analyzer
+				guide exactly where to place it rather than using a fixed number
+				every time.
 			</p>
 			<p class="mb-2">
-				Band 3 — Low-Pass Filter. This is the most important band for
-				the sub. Set the filter type to Low-Pass (the ramp sloping
-				downward) and place it at around 150–200 Hz. This cuts
-				everything above that point so the sub stays locked in its own
-				low frequency lane and does not compete with your bassline,
-				pads, or any other elements that live higher up in the spectrum.
-				No Gain or Q adjustment needed here, just set the frequency and
-				the filter does the rest. Note that you only need 3 bands for
-				the sub — do not activate any further bands as they will be
-				redundant and unnecessary.
+				Band 3 — High cut filter. This is the most important band for
+				the sub. Set the filter type to High cut and place it at around
+				150–200 Hz. This cuts everything above that point so the sub
+				stays locked in its own low frequency lane and does not compete
+				with your bassline, pads, or any other elements that live higher
+				up in the spectrum. No Gain or Q adjustment needed here, just
+				set the frequency and the filter does the rest. Note that you
+				only need 3 bands for the sub — do not activate any further
+				bands as they will be redundant and unnecessary.
 			</p>
 			<p class="mb-2">
 				The Golden Rule — always do all of this with your full mix
@@ -383,6 +442,73 @@ import Card from "../Card.astro";
 				clean.
 			</p>
 			<Image src={eqEightSub} alt="A bird sitting on a nest of eggs." />
+		</Card>
+		<Card>
+			<p class="mb-2">Snare</p>
+			<p class="mb-2">
+				Just like the kick, every snare sample is different, so before
+				touching any knobs, turn on the spectrum analyzer in EQ Eight
+				and play the snare so you can see where its energy is sitting —
+				most snares will show a concentration of energy in the low mids
+				with a long tail extending into the high end.
+			</p>
+			<p class="mb-2">
+				EQ Eight has three filter types you will use for the snare. The
+				Low cut filter, the Peak filter, and the High shelf filter.
+			</p>
+			<p class="mb-2">
+				Band 1 — Remove the Rumble. Set the filter type to Low cut and
+				place it at 80 Hz. This removes sub frequencies that add no
+				value to a snare and only clutter the low end of your mix. No
+				Gain or Q adjustment needed here, just set the frequency and the
+				filter does the rest.
+			</p>
+			<p class="mb-2">
+				Band 2 — Cut the Boxiness. Set the filter type to Peak and place
+				it around 200 Hz, cutting by -3 dB with a Q of around 1.2. This
+				is the zone responsible for the cardboard, hollow tone that
+				makes snares sound cheap and amateur. Sweep slowly around this
+				area while the track plays and you will hear it immediately —
+				cut until the snare sounds tighter and more focused.
+			</p>
+			<p class="mb-2">
+				Band 3 — Cut the Nasal Honk. Set the filter type to Peak and
+				place it around 900 Hz, cutting by -2 dB with a Q of around 1.0.
+				This mid range zone can make a snare sound thin and nasal if
+				there is too much of it. A gentle cut here cleans up the tone
+				without taking away the body of the snare.
+			</p>
+			<p class="mb-2">
+				Band 4 — Add the Crack and Attack. Set the filter type to Peak
+				and place it around 3 kHz, boosting by +2.5 dB with a Q of
+				around 1.5. This is where the snap and punch of the snare lives.
+				Boosting here makes the snare cut through the mix on any speaker
+				or playback system, which is especially important in house where
+				the kick and bassline dominate the low end.
+			</p>
+			<p class="mb-2">
+				Band 5 — Open up the Air. Set the filter type to Peak and place
+				it around 8 kHz, boosting by +2 dB with a Q of around 0.8. This
+				brings out the sizzle of the snare wires and adds presence and
+				shimmer to the top end of the snare.
+			</p>
+			<p class="mb-2">
+				Band 6 — High shelf lift. Set the filter type to High shelf and
+				place it at 12 kHz, boosting by +1.5 dB with a Q of around 0.71.
+				This adds a gentle, wide lift across the entire top end of the
+				snare, giving it air and openness without targeting any specific
+				frequency.
+			</p>
+			<p class="mb-2">
+				The Golden Rule — always do all of this with your full mix
+				playing, never in solo. The snare needs to sit on top of the
+				kick and cut through the mix without clashing with the hi hats
+				or any other elements that live in the mid and high frequencies.
+			</p>
+			<Image
+				src={eqEightSnare}
+				alt="EQ Eight settings for a house snare."
+			/>
 		</Card>
 	</Card>
 </Card>
