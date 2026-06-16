@@ -1,0 +1,23 @@
+{
+    "tracks": {
+        "kick": {
+            "eq_eight": [
+                {
+                    "band": 1,
+                    "type": "Low cut 48dB",
+                    "freq": 60,
+                    "gain": null,
+                    "q": 0.71
+                },
+                {
+                    "band": 2,
+                    "type": "Peak",
+                    "freq": 100,
+                    "gain": 3.5,
+                    "q": 2.1
+                }
+            ]
+        },
+        "sub_bass": {}
+    }
+}
