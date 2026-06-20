@@ -2,50 +2,550 @@
   "tracks": {
     "kick_electronic": {
       "eq_eight": [
-        { "band": 1, "type": "Low cut 48dB", "freq": 30, "gain": null, "q": 0.71 },
-        { "band": 2, "type": "Peak", "freq": 80, "gain": 3.0, "q": 2.0 },
-        { "band": 3, "type": "Peak", "freq": 200, "gain": -2.5, "q": 1.5 },
-        { "band": 4, "type": "High cut 12dB", "freq": 12000, "gain": null, "q": 0.71 }
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 30,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 80,
+          "gain": 3.0,
+          "q": 2.0
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 200,
+          "gain": -2.5,
+          "q": 1.5
+        },
+        {
+          "band": 4,
+          "type": "High cut 12dB",
+          "freq": 12000,
+          "gain": null,
+          "q": 0.71
+        }
       ]
     },
     "basic_sub_sine": {
       "eq_eight": [
-        { "band": 1, "type": "Low cut 12dB", "freq": 30, "gain": null, "q": 0.71 },
-        { "band": 2, "type": "Peak", "freq": 80, "gain": 2.0, "q": 1.8 },
-        { "band": 3, "type": "High cut 48dB", "freq": 200, "gain": null, "q": 0.71 }
+        {
+          "band": 1,
+          "type": "Low cut 12dB",
+          "freq": 30,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 80,
+          "gain": 2.0,
+          "q": 1.8
+        },
+        {
+          "band": 3,
+          "type": "High cut 48dB",
+          "freq": 200,
+          "gain": null,
+          "q": 0.71
+        }
       ]
     },
     "tom_low_studiob": {
       "eq_eight": [
-        { "band": 1, "type": "Low cut 48dB", "freq": 50, "gain": null, "q": 0.71 },
-        { "band": 2, "type": "Peak", "freq": 120, "gain": 2.5, "q": 2.0 },
-        { "band": 3, "type": "Peak", "freq": 400, "gain": -2.0, "q": 1.5 },
-        { "band": 4, "type": "High cut 12dB", "freq": 8000, "gain": null, "q": 0.71 }
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 50,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 120,
+          "gain": 2.5,
+          "q": 2.0
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 400,
+          "gain": -2.0,
+          "q": 1.5
+        },
+        {
+          "band": 4,
+          "type": "High cut 12dB",
+          "freq": 8000,
+          "gain": null,
+          "q": 0.71
+        }
       ]
     },
     "snare_rolling": {
       "eq_eight": [
-        { "band": 1, "type": "Low cut 48dB", "freq": 80, "gain": null, "q": 0.71 },
-        { "band": 2, "type": "Peak", "freq": 200, "gain": -2.0, "q": 1.5 },
-        { "band": 3, "type": "Peak", "freq": 1000, "gain": -1.5, "q": 1.2 },
-        { "band": 4, "type": "High shelf", "freq": 6000, "gain": 2.0, "q": 0.71 }
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 80,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 200,
+          "gain": -2.0,
+          "q": 1.5
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 1000,
+          "gain": -1.5,
+          "q": 1.2
+        },
+        {
+          "band": 4,
+          "type": "High shelf",
+          "freq": 6000,
+          "gain": 2.0,
+          "q": 0.71
+        }
       ]
     },
     "clap_707": {
       "eq_eight": [
-        { "band": 1, "type": "Low cut 48dB", "freq": 100, "gain": null, "q": 0.71 },
-        { "band": 2, "type": "Peak", "freq": 300, "gain": -2.5, "q": 1.5 },
-        { "band": 3, "type": "Peak", "freq": 2500, "gain": 2.0, "q": 1.8 },
-        { "band": 4, "type": "High shelf", "freq": 8000, "gain": 2.5, "q": 0.71 }
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 100,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 300,
+          "gain": -2.5,
+          "q": 1.5
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 2500,
+          "gain": 2.0,
+          "q": 1.8
+        },
+        {
+          "band": 4,
+          "type": "High shelf",
+          "freq": 8000,
+          "gain": 2.5,
+          "q": 0.71
+        }
       ]
     },
     "hihat_closed_short": {
       "eq_eight": [
-        { "band": 1, "type": "Low cut 48dB", "freq": 200, "gain": null, "q": 0.71 },
-        { "band": 2, "type": "Peak", "freq": 500, "gain": -2.0, "q": 1.5 },
-        { "band": 3, "type": "Peak", "freq": 3000, "gain": 1.5, "q": 1.8 },
-        { "band": 4, "type": "Peak", "freq": 8000, "gain": -2.5, "q": 1.2 },
-        { "band": 5, "type": "High cut 12dB", "freq": 16000, "gain": null, "q": 0.71 }
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 200,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 500,
+          "gain": -2.0,
+          "q": 1.5
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 3000,
+          "gain": 1.5,
+          "q": 1.8
+        },
+        {
+          "band": 4,
+          "type": "Peak",
+          "freq": 8000,
+          "gain": -2.5,
+          "q": 1.2
+        },
+        {
+          "band": 5,
+          "type": "High cut 12dB",
+          "freq": 16000,
+          "gain": null,
+          "q": 0.71
+        }
+      ]
+    },
+    "cymbal_808_tone8_e": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 200,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 600,
+          "gain": -1.5,
+          "q": 1.2
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 4000,
+          "gain": -1.5,
+          "q": 1.2
+        },
+        {
+          "band": 4,
+          "type": "High shelf",
+          "freq": 10000,
+          "gain": 1.5,
+          "q": 0.71
+        }
+      ]
+    },
+    "80s_tape": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 70,
+          "gain": null,
+          "q": 0.71
+        }
+      ]
+    },
+    "crash_505": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 200,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 800,
+          "gain": -2.0,
+          "q": 1.2
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 4000,
+          "gain": -2.5,
+          "q": 1.2
+        },
+        {
+          "band": 4,
+          "type": "High shelf",
+          "freq": 9000,
+          "gain": -2.0,
+          "q": 0.71
+        }
+      ]
+    },
+    "ride_stick_tight": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 250,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 800,
+          "gain": -2.0,
+          "q": 1.2
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 5000,
+          "gain": -2.0,
+          "q": 1.2
+        },
+        {
+          "band": 4,
+          "type": "High shelf",
+          "freq": 10000,
+          "gain": -1.5,
+          "q": 0.71
+        }
+      ]
+    },
+    "basic_jupo_bass": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 40,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 100,
+          "gain": 2.0,
+          "q": 2.0
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 250,
+          "gain": -2.5,
+          "q": 1.5
+        },
+        {
+          "band": 4,
+          "type": "High cut 12dB",
+          "freq": 800,
+          "gain": null,
+          "q": 0.71
+        }
+      ]
+    },
+    "the_ultimate_seduction": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 120,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 300,
+          "gain": -2.5,
+          "q": 1.5
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 2500,
+          "gain": 2.0,
+          "q": 1.8
+        },
+        {
+          "band": 4,
+          "type": "High cut 12dB",
+          "freq": 12000,
+          "gain": null,
+          "q": 0.71
+        }
+      ]
+    },
+    "you_got_to_believe": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 100,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 400,
+          "gain": -2.0,
+          "q": 1.5
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 3000,
+          "gain": 2.5,
+          "q": 1.8
+        },
+        {
+          "band": 4,
+          "type": "High shelf",
+          "freq": 10000,
+          "gain": 1.5,
+          "q": 0.71
+        }
+      ]
+    },
+    "female_laughter_2": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 150,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 500,
+          "gain": -2.0,
+          "q": 1.5
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 4000,
+          "gain": 2.0,
+          "q": 1.8
+        },
+        {
+          "band": 4,
+          "type": "High cut 12dB",
+          "freq": 14000,
+          "gain": null,
+          "q": 0.71
+        }
+      ]
+    },
+    "chorale_sea": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 60,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 100,
+          "gain": -2.5,
+          "q": 2.0
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 400,
+          "gain": -1.5,
+          "q": 1.2
+        },
+        {
+          "band": 4,
+          "type": "High shelf",
+          "freq": 8000,
+          "gain": 2.0,
+          "q": 0.71
+        }
+      ]
+    },
+    "darkness_pad": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 80,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 150,
+          "gain": -2.5,
+          "q": 1.8
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 300,
+          "gain": -2.0,
+          "q": 1.5
+        },
+        {
+          "band": 4,
+          "type": "High cut 12dB",
+          "freq": 600,
+          "gain": null,
+          "q": 0.71
+        }
+      ]
+    },
+    "vintage_strings": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 200,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 300,
+          "gain": -2.5,
+          "q": 1.8
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 800,
+          "gain": 2.0,
+          "q": 1.5
+        },
+        {
+          "band": 4,
+          "type": "High cut 12dB",
+          "freq": 4000,
+          "gain": null,
+          "q": 0.71
+        }
+      ]
+    },
+    "dark_meow_pad": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 80,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 200,
+          "gain": -2.0,
+          "q": 1.5
+        },
+        {
+          "band": 3,
+          "type": "High cut 48dB",
+          "freq": 1200,
+          "gain": null,
+          "q": 0.71
+        }
       ]
     }
   }
