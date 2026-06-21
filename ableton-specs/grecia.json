@@ -57,21 +57,21 @@
         }
       ]
     },
-    "tom_low_studiob": {
+    "tom_bluesbreak_1": {
       "eq_eight": [
         {
           "band": 1,
           "type": "Low cut 48dB",
-          "freq": 50,
+          "freq": 80,
           "gain": null,
           "q": 0.71
         },
         {
           "band": 2,
           "type": "Peak",
-          "freq": 120,
-          "gain": 2.5,
-          "q": 2.0
+          "freq": 180,
+          "gain": -3.0,
+          "q": 2.5
         },
         {
           "band": 3,
@@ -82,6 +82,13 @@
         },
         {
           "band": 4,
+          "type": "Peak",
+          "freq": 2500,
+          "gain": -1.5,
+          "q": 1.2
+        },
+        {
+          "band": 5,
           "type": "High cut 12dB",
           "freq": 8000,
           "gain": null,
@@ -544,6 +551,38 @@
           "type": "High cut 48dB",
           "freq": 1200,
           "gain": null,
+          "q": 0.71
+        }
+      ]
+    },
+    "snap_xrated": {
+      "eq_eight": [
+        {
+          "band": 1,
+          "type": "Low cut 48dB",
+          "freq": 120,
+          "gain": null,
+          "q": 0.71
+        },
+        {
+          "band": 2,
+          "type": "Peak",
+          "freq": 400,
+          "gain": -2.5,
+          "q": 1.5
+        },
+        {
+          "band": 3,
+          "type": "Peak",
+          "freq": 2000,
+          "gain": 2.0,
+          "q": 1.8
+        },
+        {
+          "band": 4,
+          "type": "High shelf",
+          "freq": 8000,
+          "gain": 1.5,
           "q": 0.71
         }
       ]
