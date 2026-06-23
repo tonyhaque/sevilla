@@ -274,55 +274,122 @@ import Card from "../Card.astro";
 				</p>
 				<ul class="list-disc list-inside">
 					<li>
-						48 dB/octave Low cut (<span
-							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
-							>cuts</span
-						> frequencies below the specified frequency);
+						Low cut filters
+						<ul class="list-disc list-inside ml-4">
+							<li class="italic">
+								High pass filters allow high frequencies to
+								pass, unaffected, while cutting low frequencies
+								below the cutoff frequency. This is why they are
+								<span class="font-bold"
+									>sometimes referred to as low cut filters.</span
+								>
+							</li>
+							<li>
+								48 dB/octave Low cut (cuts frequencies below the
+								specified frequency)
+								<span
+									class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+									>First</span
+								>
+							</li>
+							<li>
+								12 dB/octave Low cut (cuts frequencies below the
+								specified frequency) <span
+									class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+									>Second</span
+								>
+							</li>
+						</ul>
 					</li>
 					<li>
-						12 dB/octave Low cut (<span
+						Low shelf (boosts or cuts frequencies lower than the
+						specified frequency) <span
 							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
-							>cuts</span
-						> frequencies below the specified frequency);
+							>Third</span
+						>
+						<ul class="list-disc list-inside ml-4">
+							<li>
+								A low shelf will allow the user to boost or cut
+								all frequencies below a cutoff frequency.
+							</li>
+						</ul>
 					</li>
 					<li>
-						Low shelf (<span
+						Peak (boosts or cuts over a range of frequencies) <span
 							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
-							>boosts or cuts</span
-						> frequencies lower than the specified frequency);
+							>Fourth</span
+						>
+						<ul class="list-disc list-inside ml-4 italic">
+							<li>
+								Peak, also known as "Bell", filters can be
+								additive or subtractive, allowing you to boost
+								or cut a specified range of frequencies around a
+								center frequency. Bells are the most flexible
+								type of filter available as these filters will
+								allow you to define the affected range more
+								precisely than any other filter type. A
+								parametric bell filter typically offers three
+								parameters; frequency, gain and Q. Frequency -
+								this control allows us to define the center
+								frequency of the filter. Gain - this control
+								allows us to choose the amplitude by which to
+								increase or decrease the selected center
+								frequency. Q - this control allows us to adjust
+								the bandwidth of frequencies that are being
+								affected. The inclusion of this feature is what
+								makes a bell filter 'fully parametric'.
+							</li>
+						</ul>
 					</li>
 					<li>
-						Peak (<span
+						Notch (sharply cuts frequencies within a narrow range) <span
 							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
-							>boosts or cuts</span
-						> over a range of frequencies);
-					</li>
-					<li>
-						Notch (<span
-							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
-							>sharply cuts</span
-						> frequencies within a narrow range);
-					</li>
-					<li>
-						High shelf (<span
-							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
-							>boosts or cuts</span
-						> frequencies higher than the specified frequency);
-					</li>
-					<li>
-						12 dB/octave High cut (<span
-							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
-							>cuts</span
-						> frequencies above the specified frequency). <span
-							class="font-semibold text-cyan-600"
-							>(Highlighted in light blue)</span
+							>Fifth</span
 						>
 					</li>
 					<li>
-						48 dB/octave High cut (<span
+						High shelf (boosts or cuts frequencies higher than the
+						specified frequency) <span
 							class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
-							>cuts</span
-						> frequencies above the specified frequency).
+							>Sixth</span
+						>
+						<ul class="list-disc list-inside ml-4">
+							<li>
+								A high shelf will allow the user to boost or cut
+								all frequencies above a cutoff frequency.
+							</li>
+						</ul>
+					</li>
+					<li>
+						High cut filters
+						<ul class="list-disc list-inside ml-4">
+							<li class="italic">
+								Low pass filters allow low frequencies to pass,
+								unaffected, while cutting high frequencies above
+								the cutoff frequency. This is why they are
+								<span class="font-bold"
+									>sometimes referred to as high cut filters.</span
+								>
+							</li>
+							<li>
+								12 dB/octave High cut (cuts frequencies above
+								the specified frequency) <span
+									class="font-semibold text-cyan-600"
+									>(Highlighted in light blue)</span
+								>
+								<span
+									class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+									>Seventh</span
+								>
+							</li>
+							<li>
+								48 dB/octave High cut (cuts frequencies above
+								the specified frequency) <span
+									class="text-indigo-700 underline decoration-pink-500 decoration-wavy"
+									>Eighth</span
+								>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
